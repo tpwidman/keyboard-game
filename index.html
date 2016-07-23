@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+			<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class='container' id='target'>
+			<div class='row col-md-12' id='word-container'>
+				<div id='block'></div>				
+				<div class='row col-lg-12' id='words'></div>
+				<div class='row col-lg-12 text-center' id='words-typed'></div>
+				<div class='row col-lg-12 text-center' id='next-letter'></div>
+			</div>
+			<div class='text-center keyboard-container' id='keyboard-upper-container'>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='126'>~</span>
+					<span class='well well-lg key' id='33'>!</span>
+					<span class='well well-lg key' id='64'>@</span>
+					<span class='well well-lg key' id='35'>#</span>
+					<span class='well well-lg key' id='36'>$</span>
+					<span class='well well-lg key' id='37'>%</span>
+					<span class='well well-lg key' id='94'>^</span>
+					<span class='well well-lg key' id='38'>&</span>
+					<span class='well well-lg key' id='42'>*</span>
+					<span class='well well-lg key' id='40'>(</span>
+					<span class='well well-lg key' id='41'>)</span>
+					<span class='well well-lg key' id='95'>_</span>
+					<span class='well well-lg key' id='43'>+</span>
+				</div>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='Q'>Q</span>
+					<span class='well well-lg key' id='W'>W</span>
+					<span class='well well-lg key' id='E'>E</span>
+					<span class='well well-lg key' id='R'>R</span>
+					<span class='well well-lg key' id='T'>T</span>
+					<span class='well well-lg key' id='Y'>Y</span>
+					<span class='well well-lg key' id='U'>U</span>
+					<span class='well well-lg key' id='I'>I</span>
+					<span class='well well-lg key' id='O'>O</span>
+					<span class='well well-lg key' id='P'>P</span>
+					<span class='well well-lg key' id='123'>{</span>
+					<span class='well well-lg key' id='125'>}</span>
+					<span class='well well-lg key' id='124'>|</span>
+				</div>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='A'>A</span>
+					<span class='well well-lg key' id='S'>S</span>
+					<span class='well well-lg key' id='D'>D</span>
+					<span class='well well-lg key' id='F'>F</span>
+					<span class='well well-lg key' id='G'>G</span>
+					<span class='well well-lg key' id='H'>H</span>
+					<span class='well well-lg key' id='J'>J</span>
+					<span class='well well-lg key' id='K'>K</span>
+					<span class='well well-lg key' id='L'>L</span>
+					<span class='well well-lg key' id='58'>:</span>
+					<span class='well well-lg key' id='34'>"</span>
+				</div>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='Z'>Z</span>
+					<span class='well well-lg key' id='X'>X</span>
+					<span class='well well-lg key' id='C'>C</span>
+					<span class='well well-lg key' id='V'>V</span>
+					<span class='well well-lg key' id='B'>B</span>
+					<span class='well well-lg key' id='N'>N</span>
+					<span class='well well-lg key' id='M'>M</span>
+					<span class='well well-lg key' id='60'>&#60</span>
+					<span class='well well-lg key' id='62'>&#62</span>
+					<span class='well well-lg key' id='63'>?</span>
+				</div>
+			</div>
+			<div class='text-center keyboard-container' id='keyboard-lower-container'>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='96'>`</span>
+					<span class='well well-lg key' id='1'>1</span>
+					<span class='well well-lg key' id='2'>2</span>
+					<span class='well well-lg key' id='3'>3</span>
+					<span class='well well-lg key' id='4'>4</span>
+					<span class='well well-lg key' id='5'>5</span>
+					<span class='well well-lg key' id='6'>6</span>
+					<span class='well well-lg key' id='7'>7</span>
+					<span class='well well-lg key' id='8'>8</span>
+					<span class='well well-lg key' id='9'>9</span>
+					<span class='well well-lg key' id='0'>0</span>
+					<span class='well well-lg key' id='45'>-</span>
+					<span class='well well-lg key' id='61'>=</span>
+				</div>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='q'>q</span>
+					<span class='well well-lg key' id='w'>w</span>
+					<span class='well well-lg key' id='e'>e</span>
+					<span class='well well-lg key' id='r'>r</span>
+					<span class='well well-lg key' id='t'>t</span>
+					<span class='well well-lg key' id='y'>y</span>
+					<span class='well well-lg key' id='u'>u</span>
+					<span class='well well-lg key' id='i'>i</span>
+					<span class='well well-lg key' id='o'>o</span>
+					<span class='well well-lg key' id='p'>p</span>
+					<span class='well well-lg key' id='91'>[</span>
+					<span class='well well-lg key' id='93'>]</span>
+					<span class='well well-lg key' id='92'>\</span>
+				</div>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='a'>a</span>
+					<span class='well well-lg key' id='s'>s</span>
+					<span class='well well-lg key' id='d'>d</span>
+					<span class='well well-lg key' id='f'>f</span>
+					<span class='well well-lg key' id='g'>g</span>
+					<span class='well well-lg key' id='h'>h</span>
+					<span class='well well-lg key' id='j'>j</span>
+					<span class='well well-lg key' id='k'>k</span>
+					<span class='well well-lg key' id='l'>l</span>
+					<span class='well well-lg key' id='59'>;</span>
+					<span class='well well-lg key' id='39'>'</span>
+				</div>
+				<div class='row col-lg-12 keys-row'>
+					<span class='well well-lg key' id='z'>z</span>
+					<span class='well well-lg key' id='x'>x</span>
+					<span class='well well-lg key' id='c'>c</span>
+					<span class='well well-lg key' id='v'>v</span>
+					<span class='well well-lg key' id='b'>b</span>
+					<span class='well well-lg key' id='n'>n</span>
+					<span class='well well-lg key' id='m'>m</span>
+					<span class='well well-lg key' id='44'>,</span>
+					<span class='well well-lg key' id='46'>.</span>
+					<span class='well well-lg key' id='47'>/</span>
+				</div>
+			</div>
+			<div class='row col-lg-12 text-center keys-row'>
+				<div class='well well-lg key' id='32'> Space</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="keyboard.js"></script>
+	</body>
+</html>

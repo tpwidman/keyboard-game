@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;	
+}
+
+#word-container {
+  font-family: Courier New, Courier, monospace;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+#block {
+  position: absolute;
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: yellow;
+}
+
+.keyboard-container {
+  margin-top: 200px;
+}
+
+#next-letter {
+  font-size: 38px;  
+}
+
+.keys-row {
+  margin-top: 40px;
+  padding: 10px 0;
+}
+
+#words-typed {
+  font-size: 20px;
+}
+.glyphicon-ok {
+  color: #1DA237
+}
+
+.glyphicon-remove {
+  color : #CD2626
+}
+
